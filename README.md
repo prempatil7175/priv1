@@ -17,3 +17,4 @@ Open `index.html` directly in any web browser, or run the included PowerShell se
 powershell -ExecutionPolicy Bypass -File server.ps1
 ```
 Then visit [http://localhost:8080/](http://localhost:8080/)!
+
