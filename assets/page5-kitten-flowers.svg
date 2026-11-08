@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p5-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F9FFF5"/>
+      <stop offset="100%" stop-color="#DEF3D6"/>
+    </radialGradient>
+    <filter id="p5-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#769E68" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p5-bg)" stroke="#B7E2A9" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Floating petals -->
+  <circle cx="70" cy="90" r="6" fill="#FFAEC0" opacity="0.7"/>
+  <circle cx="250" cy="80" r="7" fill="#FFE066" opacity="0.7"/>
+  <circle cx="265" cy="120" r="5" fill="#FFAEC0" opacity="0.6"/>
+  
+  <g filter="url(#p5-shadow)">
+    <!-- Cat Ears -->
+    <polygon points="110,105 118,50 148,88" fill="#FFFDF8" stroke="#483C32" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="116,100 123,62 142,90" fill="#FFBCC9"/>
+    <polygon points="210,105 202,50 172,88" fill="#FFFDF8" stroke="#483C32" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="204,100 197,62 178,90" fill="#FFBCC9"/>
+    
+    <!-- Cat Body -->
+    <ellipse cx="160" cy="220" rx="60" ry="55" fill="#FFFDF8" stroke="#483C32" stroke-width="3.5"/>
+    <ellipse cx="115" cy="270" rx="16" ry="10" fill="#FFFDF8" stroke="#483C32" stroke-width="3"/>
+    <ellipse cx="205" cy="270" rx="16" ry="10" fill="#FFFDF8" stroke="#483C32" stroke-width="3"/>
+    
+    <!-- Cat Head -->
+    <ellipse cx="160" cy="125" rx="55" ry="46" fill="#FFFDF8" stroke="#483C32" stroke-width="3.5"/>
+    <!-- Cute Eyes -->
+    <ellipse cx="140" cy="122" rx="8" ry="10" fill="#2E2420"/>
+    <circle cx="137" cy="119" r="3" fill="#FFF"/>
+    <circle cx="142" cy="126" r="1.5" fill="#FFF"/>
+    <ellipse cx="180" cy="122" rx="8" ry="10" fill="#2E2420"/>
+    <circle cx="177" cy="119" r="3" fill="#FFF"/>
+    <circle cx="182" cy="126" r="1.5" fill="#FFF"/>
+    
+    <!-- Big blushing cheeks -->
+    <ellipse cx="125" cy="132" rx="10" ry="6" fill="#FF758F" opacity="0.6"/>
+    <ellipse cx="195" cy="132" rx="10" ry="6" fill="#FF758F" opacity="0.6"/>
+    
+    <!-- Mouth -->
+    <polygon points="157,130 163,130 160,134" fill="#FF8FA3"/>
+    <path d="M154,136 Q160,133 160,133 Q160,133 166,136" fill="none" stroke="#483C32" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Whiskers -->
+    <line x1="102" y1="126" x2="118" y2="128" stroke="#483C32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="135" x2="117" y2="134" stroke="#483C32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="218" y1="126" x2="202" y2="128" stroke="#483C32" stroke-width="2" stroke-linecap="round"/>
+    <line x1="220" y1="135" x2="203" y2="134" stroke="#483C32" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Flower Bouquet -->
+    <!-- Flower stems -->
+    <path d="M150,210 L160,250 M160,205 L160,250 M170,210 L160,250" stroke="#5E9655" stroke-width="3" stroke-linecap="round"/>
+    <!-- Bouquet wrap -->
+    <polygon points="140,205 180,205 168,255 152,255" fill="#F8E3C5" stroke="#483C32" stroke-width="2.5"/>
+    <path d="M150,230 Q160,238 170,230" fill="none" stroke="#FFAEC0" stroke-width="3"/>
+    
+    <!-- Flowers cluster -->
+    <!-- Center Pink Tulip/Rose -->
+    <circle cx="160" cy="180" r="14" fill="#FF4D6D" stroke="#483C32" stroke-width="2"/>
+    <circle cx="160" cy="180" r="8" fill="#FF758F"/>
+    <!-- Yellow Daisy -->
+    <circle cx="138" cy="188" r="12" fill="#FFD166" stroke="#483C32" stroke-width="2"/>
+    <circle cx="138" cy="188" r="6" fill="#F77F00"/>
+    <!-- Blue/Purple Daisy -->
+    <circle cx="182" cy="188" r="12" fill="#B5E2FA" stroke="#483C32" stroke-width="2"/>
+    <circle cx="182" cy="188" r="6" fill="#0077B6"/>
+    <!-- White Daisy -->
+    <circle cx="160" cy="165" r="9" fill="#FFF" stroke="#483C32" stroke-width="1.8"/>
+    <circle cx="160" cy="165" r="4" fill="#FFD166"/>
+    
+    <!-- Little Paws holding the bouquet -->
+    <ellipse cx="135" cy="210" rx="12" ry="9" fill="#FFFDF8" stroke="#483C32" stroke-width="2.5" transform="rotate(20 135 210)"/>
+    <ellipse cx="185" cy="210" rx="12" ry="9" fill="#FFFDF8" stroke="#483C32" stroke-width="2.5" transform="rotate(-20 185 210)"/>
+  </g>
+</svg>
+

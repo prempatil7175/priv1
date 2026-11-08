@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p6-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8F5"/>
+      <stop offset="100%" stop-color="#FCE1D4"/>
+    </radialGradient>
+    <filter id="p6-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#D98A68" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p6-bg)" stroke="#F5BAA0" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Floating sprinkles -->
+  <rect x="65" y="80" width="10" height="4" rx="2" fill="#FF4D6D" transform="rotate(30 65 80)"/>
+  <rect x="250" y="85" width="10" height="4" rx="2" fill="#48CAE4" transform="rotate(-25 250 85)"/>
+  <circle cx="260" cy="130" r="4" fill="#FFD166"/>
+  
+  <g filter="url(#p6-shadow)">
+    <!-- Cat on Left Side -->
+    <!-- Ears -->
+    <polygon points="75,120 85,70 112,105" fill="#FFFDF8" stroke="#483832" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="82,115 89,82 106,108" fill="#FFAEC0"/>
+    <polygon points="160,120 152,70 125,105" fill="#FFFDF8" stroke="#483832" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="153,115 147,82 130,108" fill="#FFAEC0"/>
+    
+    <!-- Cat Body -->
+    <ellipse cx="115" cy="225" rx="50" ry="50" fill="#FFFDF8" stroke="#483832" stroke-width="3.5"/>
+    <ellipse cx="80" cy="270" rx="15" ry="10" fill="#FFFDF8" stroke="#483832" stroke-width="3"/>
+    
+    <!-- Cat Head tilted -->
+    <ellipse cx="118" cy="140" rx="46" ry="40" fill="#FFFDF8" stroke="#483832" stroke-width="3.5"/>
+    <!-- Excited Eyes -->
+    <circle cx="102" cy="138" r="7" fill="#2E2420"/>
+    <circle cx="100" cy="135" r="2.5" fill="#FFF"/>
+    <circle cx="132" cy="138" r="7" fill="#2E2420"/>
+    <circle cx="130" cy="135" r="2.5" fill="#FFF"/>
+    
+    <!-- Pink Cheeks -->
+    <ellipse cx="88" cy="146" rx="8" ry="5" fill="#FF758F" opacity="0.6"/>
+    <ellipse cx="145" cy="146" rx="8" ry="5" fill="#FF758F" opacity="0.6"/>
+    
+    <!-- Licking tongue / mouth -->
+    <path d="M112,148 Q117,145 122,148" stroke="#483832" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <path d="M114,149 Q117,157 120,149 Z" fill="#FF758F"/>
+    
+    <!-- Paw pointing at cupcake -->
+    <ellipse cx="155" cy="195" rx="14" ry="9" fill="#FFFDF8" stroke="#483832" stroke-width="2.5" transform="rotate(15 155 195)"/>
+    
+    <!-- Giant Cupcake on Right Side -->
+    <!-- Cupcake wrapper -->
+    <polygon points="190,215 250,215 240,270 200,270" fill="#FFCCD5" stroke="#483832" stroke-width="3.5"/>
+    <line x1="202" y1="215" x2="208" y2="270" stroke="#FF8FA3" stroke-width="2"/>
+    <line x1="220" y1="215" x2="220" y2="270" stroke="#FF8FA3" stroke-width="2"/>
+    <line x1="238" y1="215" x2="232" y2="270" stroke="#FF8FA3" stroke-width="2"/>
+    
+    <!-- Cupcake Frosting Swirls -->
+    <ellipse cx="220" cy="210" rx="35" ry="16" fill="#FFF0F5" stroke="#483832" stroke-width="3"/>
+    <path d="M192,205 C192,180 248,180 248,205 Z" fill="#FFB3C6" stroke="#483832" stroke-width="3"/>
+    <!-- Top swirl -->
+    <path d="M205,182 C205,160 235,160 235,182 Z" fill="#FF8FA3" stroke="#483832" stroke-width="2.5"/>
+    <path d="M220,165 Q225,152 220,148" stroke="#483832" stroke-width="2.5" fill="none"/>
+    
+    <!-- Cherry on top -->
+    <circle cx="220" cy="150" r="10" fill="#D90429" stroke="#483832" stroke-width="2"/>
+    <circle cx="218" cy="147" r="3" fill="#FFF" opacity="0.8"/>
+    <path d="M222,142 Q230,132 235,135" stroke="#2B9348" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Sprinkles on frosting -->
+    <circle cx="210" cy="190" r="2.5" fill="#48CAE4"/>
+    <circle cx="230" cy="195" r="2.5" fill="#FFD166"/>
+    <circle cx="220" cy="175" r="2.5" fill="#52B788"/>
+    <circle cx="238" cy="180" r="2.5" fill="#FFF"/>
+  </g>
+</svg>
+

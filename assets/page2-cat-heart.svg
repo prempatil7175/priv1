@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p2-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5F7"/>
+      <stop offset="100%" stop-color="#FED8E2"/>
+    </radialGradient>
+    <filter id="p2-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#D47A8D" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p2-bg)" stroke="#F5A3B7" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Floating Hearts in Background -->
+  <path d="M60,90 C50,75 30,85 40,100 L60,120 L80,100 C90,85 70,75 60,90 Z" fill="#FFA5BA" opacity="0.6"/>
+  <path d="M260,80 C250,65 230,75 240,90 L260,110 L280,90 C290,75 270,65 260,80 Z" fill="#FFA5BA" opacity="0.6"/>
+  
+  <g filter="url(#p2-shadow)">
+    <!-- Cat Ears -->
+    <polygon points="105,115 115,55 145,95" fill="#FFFBF5" stroke="#523E38" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="112,110 120,68 140,96" fill="#FFAEC0"/>
+    <polygon points="215,115 205,55 175,95" fill="#FFFBF5" stroke="#523E38" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="208,110 200,68 180,96" fill="#FFAEC0"/>
+    <!-- Cat Body -->
+    <ellipse cx="160" cy="235" rx="66" ry="58" fill="#FFFBF5" stroke="#523E38" stroke-width="3.5"/>
+    <ellipse cx="160" cy="245" rx="44" ry="38" fill="#FFF0F3"/>
+    <!-- Paws feet -->
+    <ellipse cx="110" cy="275" rx="18" ry="12" fill="#FFFBF5" stroke="#523E38" stroke-width="3"/>
+    <ellipse cx="210" cy="275" rx="18" ry="12" fill="#FFFBF5" stroke="#523E38" stroke-width="3"/>
+    <!-- Cat Head -->
+    <ellipse cx="160" cy="135" rx="60" ry="50" fill="#FFFBF5" stroke="#523E38" stroke-width="3.5"/>
+    <!-- Happy Eyes (curved lines) -->
+    <path d="M128,132 Q138,122 148,132" fill="none" stroke="#523E38" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M172,132 Q182,122 192,132" fill="none" stroke="#523E38" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Rosy Cheeks -->
+    <ellipse cx="124" cy="142" rx="11" ry="6" fill="#FF8CA3" opacity="0.7"/>
+    <ellipse cx="196" cy="142" rx="11" ry="6" fill="#FF8CA3" opacity="0.7"/>
+    <!-- Cute Nose & Mouth -->
+    <polygon points="157,140 163,140 160,144" fill="#FF758F"/>
+    <path d="M152,148 Q160,144 160,144 Q160,144 168,148" fill="none" stroke="#523E38" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Whiskers -->
+    <line x1="98" y1="138" x2="116" y2="140" stroke="#523E38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="96" y1="147" x2="115" y2="146" stroke="#523E38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="222" y1="138" x2="204" y2="140" stroke="#523E38" stroke-width="2" stroke-linecap="round"/>
+    <line x1="224" y1="147" x2="205" y2="146" stroke="#523E38" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Heart Made of Paws -->
+    <!-- Arms reaching forward -->
+    <path d="M115,200 C125,185 142,185 152,196 C155,200 152,208 145,210 C136,212 120,215 112,208 Z" fill="#FFFBF5" stroke="#523E38" stroke-width="3"/>
+    <path d="M205,200 C195,185 178,185 168,196 C165,200 168,208 175,210 C184,212 200,215 208,208 Z" fill="#FFFBF5" stroke="#523E38" stroke-width="3"/>
+    <!-- Glowing Heart in between paws -->
+    <path d="M160,175 C150,158 128,170 138,190 L160,212 L182,190 C192,170 170,158 160,175 Z" fill="#FF4D6D" stroke="#C9184A" stroke-width="2"/>
+    <circle cx="150" cy="178" r="3" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+</svg>
+

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p7-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF5"/>
+      <stop offset="100%" stop-color="#FBE6C2"/>
+    </radialGradient>
+    <filter id="p7-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#B87D3B" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p7-bg)" stroke="#E8B878" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Swirling steam hearts -->
+  <path d="M125,120 Q120,95 130,85 Q140,75 130,65" fill="none" stroke="#FFAAA6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,4"/>
+  <path d="M160,110 Q165,85 155,75 Q150,65 160,55" fill="none" stroke="#FFAAA6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,4"/>
+  <path d="M195,120 Q200,95 190,85 Q180,75 190,65" fill="none" stroke="#FFAAA6" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4,4"/>
+  
+  <g filter="url(#p7-shadow)">
+    <!-- Cat behind the steamer -->
+    <!-- Ears -->
+    <polygon points="105,95 115,45 142,82" fill="#FFFDF8" stroke="#483832" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="112,90 120,58 136,84" fill="#FFAEC0"/>
+    <polygon points="215,95 205,45 178,82" fill="#FFFDF8" stroke="#483832" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="208,90 200,58 184,84" fill="#FFAEC0"/>
+    
+    <!-- Little Chef Hat / Bandana -->
+    <path d="M135,68 Q160,45 185,68" fill="#FF8FA3" stroke="#483832" stroke-width="2.5"/>
+    <circle cx="160" cy="55" r="5" fill="#FFE066"/>
+    
+    <!-- Cat Head -->
+    <ellipse cx="160" cy="115" rx="55" ry="45" fill="#FFFDF8" stroke="#483832" stroke-width="3.5"/>
+    <!-- Smiling Eyes -->
+    <path d="M130,112 Q140,102 150,112" fill="none" stroke="#483832" stroke-width="3" stroke-linecap="round"/>
+    <path d="M170,112 Q180,102 190,112" fill="none" stroke="#483832" stroke-width="3" stroke-linecap="round"/>
+    <!-- Cheeks -->
+    <ellipse cx="122" cy="120" rx="9" ry="6" fill="#FF758F" opacity="0.6"/>
+    <ellipse cx="198" cy="120" rx="9" ry="6" fill="#FF758F" opacity="0.6"/>
+    <!-- Cute Nose & Open Smile -->
+    <polygon points="157,118 163,118 160,122" fill="#FF758F"/>
+    <path d="M153,126 Q160,135 167,126" stroke="#483832" stroke-width="2.5" fill="#FF8FA3"/>
+    
+    <!-- Bamboo Steamer Basket -->
+    <!-- Base / rim -->
+    <ellipse cx="160" cy="225" rx="90" ry="32" fill="#DDB892" stroke="#6F4E37" stroke-width="3.5"/>
+    <rect x="70" y="225" width="180" height="35" fill="#DDB892" stroke="#6F4E37" stroke-width="3.5"/>
+    <ellipse cx="160" cy="260" rx="90" ry="32" fill="#C99E74" stroke="#6F4E37" stroke-width="3.5"/>
+    <!-- Basket weaving texture line -->
+    <line x1="72" y1="242" x2="248" y2="242" stroke="#A67C52" stroke-width="2.5" stroke-dasharray="8,6"/>
+    
+    <!-- Inside Steamer Layer -->
+    <ellipse cx="160" cy="220" rx="86" ry="28" fill="#EDE0D4" stroke="#6F4E37" stroke-width="3"/>
+    
+    <!-- Plump Cute Steamed Momos! -->
+    <!-- Left Momo -->
+    <g transform="translate(95, 185)">
+      <path d="M10,25 C5,10 25,5 30,18 C35,5 55,10 50,25 C45,35 15,35 10,25 Z" fill="#FFFDF8" stroke="#6F4E37" stroke-width="2.5"/>
+      <path d="M25,12 Q30,6 35,12" stroke="#DDB892" stroke-width="2" fill="none"/>
+      <!-- Tiny cute face on momo -->
+      <circle cx="24" cy="24" r="1.5" fill="#483832"/>
+      <circle cx="36" cy="24" r="1.5" fill="#483832"/>
+      <ellipse cx="30" cy="27" rx="2" ry="1" fill="#FFAEC0"/>
+    </g>
+    <!-- Right Momo -->
+    <g transform="translate(165, 185)">
+      <path d="M10,25 C5,10 25,5 30,18 C35,5 55,10 50,25 C45,35 15,35 10,25 Z" fill="#FFFDF8" stroke="#6F4E37" stroke-width="2.5"/>
+      <path d="M25,12 Q30,6 35,12" stroke="#DDB892" stroke-width="2" fill="none"/>
+      <circle cx="24" cy="24" r="1.5" fill="#483832"/>
+      <circle cx="36" cy="24" r="1.5" fill="#483832"/>
+      <ellipse cx="30" cy="27" rx="2" ry="1" fill="#FFAEC0"/>
+    </g>
+    <!-- Center Hero Momo -->
+    <g transform="translate(130, 195)">
+      <path d="M12,28 C6,10 30,5 36,18 C42,5 66,10 60,28 C54,40 18,40 12,28 Z" fill="#FFFDF8" stroke="#6F4E37" stroke-width="2.5"/>
+      <path d="M30,12 Q36,5 42,12" stroke="#DDB892" stroke-width="2" fill="none"/>
+      <!-- Happy face -->
+      <circle cx="28" cy="27" r="2" fill="#483832"/>
+      <circle cx="44" cy="27" r="2" fill="#483832"/>
+      <ellipse cx="23" cy="30" rx="3" ry="1.5" fill="#FF758F"/>
+      <ellipse cx="49" cy="30" rx="3" ry="1.5" fill="#FF758F"/>
+      <path d="M33,30 Q36,33 39,30" stroke="#483832" stroke-width="1.8" fill="none"/>
+    </g>
+    
+    <!-- Cat Paws holding sides of steamer -->
+    <ellipse cx="78" cy="225" rx="14" ry="10" fill="#FFFDF8" stroke="#483832" stroke-width="2.5" transform="rotate(-15 78 225)"/>
+    <ellipse cx="242" cy="225" rx="14" ry="10" fill="#FFFDF8" stroke="#483832" stroke-width="2.5" transform="rotate(15 242 225)"/>
+  </g>
+</svg>
+

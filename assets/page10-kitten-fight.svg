@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p10-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5F5"/>
+      <stop offset="100%" stop-color="#FED0D0"/>
+    </radialGradient>
+    <filter id="p10-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#D9534F" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p10-bg)" stroke="#F89898" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Action lines -->
+  <line x1="60" y1="120" x2="80" y2="128" stroke="#D9534F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="55" y1="140" x2="75" y2="142" stroke="#D9534F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="260" y1="120" x2="240" y2="128" stroke="#D9534F" stroke-width="3" stroke-linecap="round"/>
+  <line x1="265" y1="140" x2="245" y2="142" stroke="#D9534F" stroke-width="3" stroke-linecap="round"/>
+  
+  <g filter="url(#p10-shadow)">
+    <!-- Cat Ears -->
+    <polygon points="108,95 115,45 145,82" fill="#FFFDF8" stroke="#422D28" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="115,90 120,58 138,85" fill="#FFAEC0"/>
+    <polygon points="212,95 205,45 175,82" fill="#FFFDF8" stroke="#422D28" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="205,90 200,58 182,85" fill="#FFAEC0"/>
+    
+    <!-- Red Champion Headband tied around forehead -->
+    <rect x="102" y="92" width="116" height="18" rx="4" fill="#E63946" stroke="#422D28" stroke-width="2.5"/>
+    <circle cx="160" cy="101" r="5" fill="#FFE066"/>
+    <!-- Headband ribbons trailing -->
+    <path d="M218,102 Q235,95 245,108" fill="none" stroke="#E63946" stroke-width="4" stroke-linecap="round"/>
+    <path d="M218,106 Q230,118 240,122" fill="none" stroke="#E63946" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Standing Cat Body in boxing stance -->
+    <ellipse cx="160" cy="210" rx="52" ry="52" fill="#FFFDF8" stroke="#422D28" stroke-width="3.5"/>
+    <ellipse cx="160" cy="218" rx="34" ry="36" fill="#FFF0F3"/>
+    
+    <!-- Strong Little Feet planted firmly -->
+    <ellipse cx="125" cy="265" rx="18" ry="12" fill="#FFFDF8" stroke="#422D28" stroke-width="3"/>
+    <ellipse cx="195" cy="265" rx="18" ry="12" fill="#FFFDF8" stroke="#422D28" stroke-width="3"/>
+    
+    <!-- Cat Head -->
+    <ellipse cx="160" cy="125" rx="55" ry="44" fill="#FFFDF8" stroke="#422D28" stroke-width="3.5"/>
+    
+    <!-- Determined / Cute "Angry" Eyebrows -->
+    <line x1="130" y1="112" x2="148" y2="120" stroke="#422D28" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="190" y1="112" x2="172" y2="120" stroke="#422D28" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Determined Big Eyes -->
+    <ellipse cx="138" cy="126" rx="8" ry="10" fill="#2E2420"/>
+    <circle cx="135" cy="123" r="3" fill="#FFF"/>
+    <ellipse cx="182" cy="126" rx="8" ry="10" fill="#2E2420"/>
+    <circle cx="179" cy="123" r="3" fill="#FFF"/>
+    
+    <!-- Rosy Cheek Blushes -->
+    <ellipse cx="122" cy="135" rx="9" ry="5" fill="#FF758F" opacity="0.6"/>
+    <ellipse cx="198" cy="135" rx="9" ry="5" fill="#FF758F" opacity="0.6"/>
+    
+    <!-- Pouting / fierce little mouth -->
+    <polygon points="157,133 163,133 160,137" fill="#FF8FA3"/>
+    <path d="M152,143 Q160,138 168,143" stroke="#422D28" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Tiny Whiskers -->
+    <line x1="102" y1="132" x2="118" y2="134" stroke="#422D28" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="140" x2="117" y2="139" stroke="#422D28" stroke-width="2" stroke-linecap="round"/>
+    <line x1="218" y1="132" x2="202" y2="134" stroke="#422D28" stroke-width="2" stroke-linecap="round"/>
+    <line x1="220" y1="140" x2="203" y2="139" stroke="#422D28" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Tiny Boxing Gloves Raised in Guard! -->
+    <!-- Left Glove -->
+    <circle cx="120" cy="175" r="18" fill="#E63946" stroke="#422D28" stroke-width="3"/>
+    <circle cx="132" cy="172" r="8" fill="#E63946" stroke="#422D28" stroke-width="2.5"/>
+    <rect x="110" y="186" width="16" height="8" rx="3" fill="#FFFFFF" stroke="#422D28" stroke-width="2"/>
+    
+    <!-- Right Glove -->
+    <circle cx="200" cy="175" r="18" fill="#E63946" stroke="#422D28" stroke-width="3"/>
+    <circle cx="188" cy="172" r="8" fill="#E63946" stroke="#422D28" stroke-width="2.5"/>
+    <rect x="194" y="186" width="16" height="8" rx="3" fill="#FFFFFF" stroke="#422D28" stroke-width="2"/>
+  </g>
+</svg>
+

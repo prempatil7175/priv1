@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm Really Sorry... 💌</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+</head>
+<body>
+
+  <!-- Background Ambient Twinkle Stars -->
+  <div class="ambient-star" style="top: 12%; left: 8%;">
+    <svg width="24" height="24" viewBox="0 0 24 24"><polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#FFB6C1"/></svg>
+  </div>
+  <div class="ambient-star" style="top: 75%; left: 10%; animation-delay: -3s;">
+    <svg width="28" height="28" viewBox="0 0 24 24"><polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#FFE066"/></svg>
+  </div>
+  <div class="ambient-star" style="top: 18%; right: 9%; animation-delay: -6s;">
+    <svg width="26" height="26" viewBox="0 0 24 24"><polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#FFE066"/></svg>
+  </div>
+  <div class="ambient-star" style="top: 80%; right: 12%; animation-delay: -9s;">
+    <svg width="22" height="22" viewBox="0 0 24 24"><polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#FFB6C1"/></svg>
+  </div>
+
+  <!-- Top Controls Bar -->
+  <div class="top-controls">
+    <button id="personalize-btn" class="control-btn" title="Personalize with Names">
+      <span>✏️</span>
+      <span>Personalize</span>
+    </button>
+    <button id="sound-toggle-btn" class="control-btn" title="Toggle Sound Effects">
+      <span id="sound-icon">🔊</span>
+      <span id="sound-label">Sound On</span>
+    </button>
+  </div>
+
+  <!-- Personalize Modal Dialog -->
+  <div class="modal-overlay" id="personalize-modal">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 class="modal-title">Personalize This Card 💌</h3>
+      <p class="modal-subtitle">Add your names to make this apology special!</p>
+      
+      <div class="modal-form-group">
+        <label for="input-recipient">Recipient's Name (e.g., Sweetheart, Alex):</label>
+        <input type="text" id="input-recipient" placeholder="Recipient's Name" maxlength="25">
+      </div>
+
+      <div class="modal-form-group">
+        <label for="input-sender">Your Name (e.g., Forever yours, Sam):</label>
+        <input type="text" id="input-sender" placeholder="Your Name" maxlength="25">
+      </div>
+
+      <div class="modal-buttons">
+        <button class="btn btn-save" id="btn-save-personalize">Apply to Card 💕</button>
+        <button class="btn btn-copy" id="btn-copy-link">Copy Shareable Link 🔗</button>
+      </div>
+      <div class="copy-alert" id="copy-alert"></div>
+    </div>
+  </div>
+
+  <!-- Canvas Confetti Overlay for Page 14 -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Main Container (The Physical Greeting Card) -->
+  <main class="card-stage wide-stage" id="card-stage">
+    <div class="greeting-card" id="greeting-card">
+      
+      <!-- Cute Greeting Card Washi Tape Detail -->
+      <div class="card-washi-tape"></div>
+
+      <!-- Page Tracker Badge -->
+      <div class="card-tracker" id="card-tracker">Page 1 of 14</div>
+
+      <!-- ====================================================================
+           PAGE 1: The Letter
+           Split into two columns inside the card:
+           Left side: Placeholder image with a starburst frame
+           Right side: Block of text styled like a sticky note
+           Bottom: Single "Next ->" button
+           ==================================================================== -->
+      <section class="page-view active" id="page-1" data-page="1">
+        <h1 class="card-heading" id="page1-heading">A Letter For You 💌</h1>
+
+        <div class="page-one-layout">
+          <!-- Left Column: Placeholder image with starburst frame -->
+          <div class="starburst-container">
+            <svg class="starburst-badge" viewBox="0 0 240 240" aria-hidden="true">
+              <!-- 20-Point Scalloped Starburst Frame -->
+              <path d="M120,5 L135,28 L160,20 L168,46 L195,44 L195,71 L220,78 L212,104 L233,120 L212,136 L220,162 L195,169 L195,196 L168,194 L160,220 L135,212 L120,235 L105,212 L80,220 L72,194 L45,196 L45,169 L20,162 L28,136 L7,120 L28,104 L20,78 L45,71 L45,44 L72,46 L80,20 L105,28 Z" 
+                    fill="#FFE5EC" stroke="#D47A8D" stroke-width="4" stroke-dasharray="6,4"/>
+            </svg>
+            <img src="assets/page1-sorry.svg" alt="Pleading cat" class="card-image" id="img-page1">
+          </div>
+
+          <!-- Right Column: Block of text styled like a sticky note -->
+          <div class="sticky-note">
+            <div class="sticky-tape"></div>
+            <p class="sticky-text" id="sticky-letter-body">
+              "I'm really sorry. I know I hurt you, and I hate that I made you sad. You mean so much to me, and my days feel dull when you're upset with me. I've been thinking about what happened, and I understand where I went wrong. Your happiness matters more to me than being right. I promise to listen better, to be more careful with my words, and to make you smile more than I make you frown. Please give me a chance to fix this. I'd do anything to see your smile again, even bribe you with momos. Forever yours"
+            </p>
+            <div class="sticky-signature" id="sticky-signature">Forever yours 💕</div>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="btn btn-single" id="btn-page1-next">Next -&gt;</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 2
+           Heading: "I am Sorry"
+           Image: Placeholder for a cat making a heart shape
+           Positive Button: "Aww, okay"
+           Negative Button: "Not Accepted"
+           ==================================================================== -->
+      <section class="page-view" id="page-2" data-page="2">
+        <h2 class="card-heading">I am Sorry</h2>
+        <div class="image-wrapper">
+          <img src="assets/page2-cat-heart.svg" alt="Cat making a heart shape" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Aww, okay</button>
+          <button class="btn btn-negative" data-action="negative">Not Accepted</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 3
+           Heading: "Pleaseeeeee"
+           Image: Placeholder for a funny hamster
+           Positive Button: "Okay okay Fine"
+           Negative Button: "No"
+           ==================================================================== -->
+      <section class="page-view" id="page-3" data-page="3">
+        <h2 class="card-heading">Pleaseeeeee</h2>
+        <div class="image-wrapper">
+          <img src="assets/page3-funny-hamster.svg" alt="Funny hamster" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Okay okay Fine</button>
+          <button class="btn btn-negative" data-action="negative">No</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 4
+           Heading: "Are you sure?"
+           Image: Placeholder for a sad kitten in a blanket
+           Positive Button: "Okay, forgiven"
+           Negative Button: "Yes, I'm sure"
+           ==================================================================== -->
+      <section class="page-view" id="page-4" data-page="4">
+        <h2 class="card-heading">Are you sure?</h2>
+        <div class="image-wrapper">
+          <img src="assets/page4-kitten-blanket.svg" alt="Sad kitten in a blanket" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Okay, forgiven</button>
+          <button class="btn btn-negative" data-action="negative">Yes, I'm sure</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 5
+           Heading: "Flowers for you"
+           Image: Placeholder for a kitten with flowers
+           Positive Button: "Aww, thank you, forgiven"
+           Negative Button: "No"
+           ==================================================================== -->
+      <section class="page-view" id="page-5" data-page="5">
+        <h2 class="card-heading">Flowers for you</h2>
+        <div class="image-wrapper">
+          <img src="assets/page5-kitten-flowers.svg" alt="Kitten with flowers" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Aww, thank you, forgiven</button>
+          <button class="btn btn-negative" data-action="negative">No</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 6
+           Heading: "Okay Cake too...."
+           Image: Placeholder for a cat with a cupcake
+           Positive Button: "Cake?! I forgive you"
+           Negative Button: "Still not enough"
+           ==================================================================== -->
+      <section class="page-view" id="page-6" data-page="6">
+        <h2 class="card-heading">Okay Cake too....</h2>
+        <div class="image-wrapper">
+          <img src="assets/page6-cat-cupcake.svg" alt="Cat with a cupcake" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Cake?! I forgive you</button>
+          <button class="btn btn-negative" data-action="negative">Still not enough</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 7
+           Heading: "Momos?"
+           Image: Placeholder for a cat with momos
+           Positive Button: "Okay!!! Fine"
+           Negative Button: "NO"
+           ==================================================================== -->
+      <section class="page-view" id="page-7" data-page="7">
+        <h2 class="card-heading">Momos?</h2>
+        <div class="image-wrapper">
+          <img src="assets/page7-cat-momos.svg" alt="Cat with momos" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Okay!!! Fine</button>
+          <button class="btn btn-negative" data-action="negative">NO</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 8
+           Heading: "Okay I'm leaving now, don't miss me"
+           Image: Placeholder for a sad kitten walking away with a bindle
+           Positive Button: "Wait, don't go! Forgiven"
+           Negative Button: "Okay Byee"
+           ==================================================================== -->
+      <section class="page-view" id="page-8" data-page="8">
+        <h2 class="card-heading">Okay I'm leaving now, don't miss me</h2>
+        <div class="image-wrapper">
+          <img src="assets/page8-kitten-bindle.svg" alt="Sad kitten walking away with a bindle" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Wait, don't go! Forgiven</button>
+          <button class="btn btn-negative" data-action="negative">Okay Byee</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 9
+           Heading: "Pleaseeeeee........"
+           Image: Placeholder for a pleading hamster
+           Positive Button: "Okay come back, apology accepted"
+           Negative Button: "Still No"
+           ==================================================================== -->
+      <section class="page-view" id="page-9" data-page="9">
+        <h2 class="card-heading">Pleaseeeeee........</h2>
+        <div class="image-wrapper">
+          <img src="assets/page9-pleading-hamster.svg" alt="Pleading hamster" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Okay come back, apology accepted</button>
+          <button class="btn btn-negative" data-action="negative">Still No</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 10
+           Heading: "Wanna fight? ......"
+           Image: Placeholder for a kitten standing up to fight
+           Positive Button: "Fine fine, forgiven"
+           Negative Button: "Yes, why not"
+           ==================================================================== -->
+      <section class="page-view" id="page-10" data-page="10">
+        <h2 class="card-heading">Wanna fight? ......</h2>
+        <div class="image-wrapper">
+          <img src="assets/page10-kitten-fight.svg" alt="Kitten standing up to fight" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Fine fine, forgiven</button>
+          <button class="btn btn-negative" data-action="negative">Yes, why not</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 11
+           Heading: "No, I can't fight you"
+           Image: Placeholder for a sad kitten in a hat
+           Positive Button: "Aww, I can't either, forgiven"
+           Negative Button: "Good because I'm still mad"
+           ==================================================================== -->
+      <section class="page-view" id="page-11" data-page="11">
+        <h2 class="card-heading">No, I can't fight you</h2>
+        <div class="image-wrapper">
+          <img src="assets/page11-kitten-hat.svg" alt="Sad kitten in a hat" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Aww, I can't either, forgiven</button>
+          <button class="btn btn-negative" data-action="negative">Good because I'm still mad</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 12
+           Heading: "Please, I won't do it again"
+           Image: Placeholder for a crying cat with hands praying
+           Positive Button: "Okay, Accepted"
+           Negative Button: "NO NO NO"
+           ==================================================================== -->
+      <section class="page-view" id="page-12" data-page="12">
+        <h2 class="card-heading">Please, I won't do it again</h2>
+        <div class="image-wrapper">
+          <img src="assets/page12-crying-cat-pray.svg" alt="Crying cat with hands praying" class="card-image">
+        </div>
+        <div class="button-group">
+          <button class="btn btn-positive" data-action="positive">Okay, Accepted</button>
+          <button class="btn btn-negative" data-action="negative">NO NO NO</button>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 13 (The Trick Page)
+           Heading: "You can't click \"No\" now, try clicking if you want"
+           Image: Placeholder for a monkey making a heart
+           Positive Button: "Fine! forgiven"
+           Negative Button: "No"
+           Special Interaction: "No" button teleports on hover!
+           ==================================================================== -->
+      <section class="page-view" id="page-13" data-page="13">
+        <h2 class="card-heading">You can't click "No" now, try clicking if you want</h2>
+        <div class="image-wrapper">
+          <img src="assets/page13-monkey-heart.svg" alt="Monkey making a heart" class="card-image">
+        </div>
+        <div class="button-group" id="page13-button-group">
+          <button class="btn btn-positive" data-action="positive">Fine! forgiven</button>
+          <button class="btn btn-negative" id="btn-page13-no">No</button>
+        </div>
+        <div class="trick-hint" id="trick-hint"></div>
+      </section>
+
+      <!-- ====================================================================
+           PAGE 14 (The Final Success Page)
+           Heading: "Yayyyy!! Thank you for forgiving"
+           Image: Placeholder for a cute doodle holding a "you are amazing" sign
+           Buttons: None.
+           ==================================================================== -->
+      <section class="page-view" id="page-14" data-page="14">
+        <div class="success-banner">✨ Best Decision Ever! ✨</div>
+        <h2 class="card-heading">Yayyyy!! Thank you for forgiving ❤️</h2>
+        <div class="image-wrapper">
+          <img src="assets/page14-doodle-amazing.svg" alt="Cute doodle holding a you are amazing sign" class="card-image">
+        </div>
+        <!-- Replay link for convenience -->
+        <div class="replay-container">
+          <button class="btn-replay" id="btn-replay">Replay our story ↺</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

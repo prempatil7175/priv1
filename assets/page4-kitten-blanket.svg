@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p4-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F3F8FF"/>
+      <stop offset="100%" stop-color="#D9E8FC"/>
+    </radialGradient>
+    <filter id="p4-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#7B9ECA" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p4-bg)" stroke="#ADC8EC" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Little stars in background -->
+  <polygon points="65,95 68,85 71,95 81,98 71,101 68,111 65,101 55,98" fill="#FFF" opacity="0.9"/>
+  <polygon points="255,85 258,75 261,85 271,88 261,91 258,101 255,91 245,88" fill="#FFF" opacity="0.9"/>
+  
+  <g filter="url(#p4-shadow)">
+    <!-- Cozy Blanket Burrito Body -->
+    <path d="M100,165 C85,210 90,265 125,278 C155,290 185,285 210,270 C235,250 235,190 220,165 Z" fill="#BEE1E6" stroke="#466365" stroke-width="3.5"/>
+    <!-- Blanket fold / layers -->
+    <path d="M105,185 C130,210 190,210 215,185 C225,230 200,275 160,278 C120,275 95,230 105,185 Z" fill="#CDEDF6" stroke="#466365" stroke-width="3"/>
+    <!-- Blanket cute star pattern -->
+    <circle cx="130" cy="245" r="4" fill="#FFAEC0"/>
+    <circle cx="185" cy="250" r="4" fill="#FFE066"/>
+    <circle cx="160" cy="235" r="3" fill="#FFF"/>
+    
+    <!-- Kitten Head peeking out -->
+    <ellipse cx="160" cy="140" rx="52" ry="44" fill="#FFFDF8" stroke="#466365" stroke-width="3.5"/>
+    <!-- Cute Folded Ears under/above blanket -->
+    <polygon points="118,115 125,78 148,105" fill="#FFFDF8" stroke="#466365" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="123,110 128,87 142,105" fill="#FFAEC0"/>
+    <polygon points="202,115 195,78 172,105" fill="#FFFDF8" stroke="#466365" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="197,110 192,87 178,105" fill="#FFAEC0"/>
+    
+    <!-- Sad Glossy Cat Eyes -->
+    <ellipse cx="140" cy="138" rx="8" ry="11" fill="#2E2420"/>
+    <circle cx="137" cy="134" r="3" fill="#FFF"/>
+    <circle cx="142" cy="142" r="1.5" fill="#FFF"/>
+    
+    <ellipse cx="180" cy="138" rx="8" ry="11" fill="#2E2420"/>
+    <circle cx="177" cy="134" r="3" fill="#FFF"/>
+    <circle cx="182" cy="142" r="1.5" fill="#FFF"/>
+    
+    <!-- Blush -->
+    <ellipse cx="125" cy="148" rx="8" ry="5" fill="#FFAEC0" opacity="0.7"/>
+    <ellipse cx="195" cy="148" rx="8" ry="5" fill="#FFAEC0" opacity="0.7"/>
+    
+    <!-- Quivering mouth & nose -->
+    <polygon points="157,146 163,146 160,150" fill="#FF8FA3"/>
+    <path d="M155,153 Q160,150 160,150 Q160,150 165,153" fill="none" stroke="#466365" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Whiskers -->
+    <line x1="108" y1="145" x2="123" y2="146" stroke="#466365" stroke-width="2" stroke-linecap="round"/>
+    <line x1="106" y1="152" x2="122" y2="150" stroke="#466365" stroke-width="2" stroke-linecap="round"/>
+    <line x1="212" y1="145" x2="197" y2="146" stroke="#466365" stroke-width="2" stroke-linecap="round"/>
+    <line x1="214" y1="152" x2="198" y2="150" stroke="#466365" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Blanket Top Rim & Kitten Tiny Paws clutching it -->
+    <path d="M106,178 Q160,195 214,178" fill="none" stroke="#466365" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Tiny paws gripping blanket -->
+    <ellipse cx="138" cy="180" rx="10" ry="8" fill="#FFFDF8" stroke="#466365" stroke-width="2.5"/>
+    <ellipse cx="182" cy="180" rx="10" ry="8" fill="#FFFDF8" stroke="#466365" stroke-width="2.5"/>
+  </g>
+</svg>
+

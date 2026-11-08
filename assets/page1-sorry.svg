@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p1-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF9FC"/>
+      <stop offset="100%" stop-color="#FFE4EC"/>
+    </radialGradient>
+    <filter id="p1-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#D47A8D" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p1-bg)" stroke="#F8B4C4" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Sparkles & Hearts -->
+  <path d="M70,80 Q75,70 80,80 Q90,85 80,90 Q75,100 70,90 Q60,85 70,80 Z" fill="#FFE066"/>
+  <path d="M250,90 Q254,82 258,90 Q266,94 258,98 Q254,106 250,98 Q242,94 250,90 Z" fill="#FFB6C1"/>
+  <path d="M160,45 C150,30 130,40 140,55 L160,75 L180,55 C190,40 170,30 160,45 Z" fill="#FF8CA3" opacity="0.85"/>
+  <!-- Cat Body -->
+  <g filter="url(#p1-shadow)">
+    <!-- Tail -->
+    <path d="M90,240 C60,250 65,210 85,215 C100,218 105,235 90,240 Z" fill="#E8D7C9" stroke="#5C4742" stroke-width="3"/>
+    <!-- Body -->
+    <ellipse cx="160" cy="225" rx="65" ry="55" fill="#FDFBF7" stroke="#5C4742" stroke-width="3.5"/>
+    <ellipse cx="160" cy="230" rx="42" ry="36" fill="#FFF0F3"/>
+    <!-- Back Paws -->
+    <ellipse cx="115" cy="265" rx="18" ry="12" fill="#FDFBF7" stroke="#5C4742" stroke-width="3"/>
+    <ellipse cx="205" cy="265" rx="18" ry="12" fill="#FDFBF7" stroke="#5C4742" stroke-width="3"/>
+    <!-- Head -->
+    <ellipse cx="160" cy="145" rx="58" ry="48" fill="#FDFBF7" stroke="#5C4742" stroke-width="3.5"/>
+    <!-- Ears -->
+    <polygon points="112,115 125,65 150,105" fill="#FDFBF7" stroke="#5C4742" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="118,110 128,75 145,103" fill="#FFBCC9"/>
+    <polygon points="208,115 195,65 170,105" fill="#FDFBF7" stroke="#5C4742" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="202,110 192,75 175,103" fill="#FFBCC9"/>
+    <!-- Face details -->
+    <!-- Droopy cute eyes -->
+    <ellipse cx="138" cy="142" rx="9" ry="11" fill="#423028"/>
+    <circle cx="135" cy="138" r="3.5" fill="#FFFFFF"/>
+    <circle cx="141" cy="145" r="1.5" fill="#FFFFFF"/>
+    <ellipse cx="182" cy="142" rx="9" ry="11" fill="#423028"/>
+    <circle cx="179" cy="138" r="3.5" fill="#FFFFFF"/>
+    <circle cx="185" cy="145" r="1.5" fill="#FFFFFF"/>
+    <!-- Teardrop -->
+    <path d="M125,148 C122,154 120,158 123,162 C126,165 130,163 129,158 Z" fill="#70C1FF"/>
+    <!-- Nose & Mouth -->
+    <polygon points="157,152 163,152 160,156" fill="#FF94A8"/>
+    <path d="M154,160 Q160,157 160,156 Q160,157 166,160" fill="none" stroke="#5C4742" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Blush -->
+    <ellipse cx="122" cy="154" rx="9" ry="5" fill="#FFAEC0" opacity="0.6"/>
+    <ellipse cx="198" cy="154" rx="9" ry="5" fill="#FFAEC0" opacity="0.6"/>
+    <!-- Whiskers -->
+    <line x1="102" y1="147" x2="118" y2="150" stroke="#5C4742" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="156" x2="117" y2="155" stroke="#5C4742" stroke-width="2" stroke-linecap="round"/>
+    <line x1="218" y1="147" x2="202" y2="150" stroke="#5C4742" stroke-width="2" stroke-linecap="round"/>
+    <line x1="220" y1="156" x2="203" y2="155" stroke="#5C4742" stroke-width="2" stroke-linecap="round"/>
+    <!-- Paws in front pleading -->
+    <ellipse cx="147" cy="205" rx="14" ry="12" fill="#FDFBF7" stroke="#5C4742" stroke-width="3" transform="rotate(-15 147 205)"/>
+    <ellipse cx="173" cy="205" rx="14" ry="12" fill="#FDFBF7" stroke="#5C4742" stroke-width="3" transform="rotate(15 173 205)"/>
+  </g>
+</svg>
+

@@ -1,0 +1,705 @@
+/* ==========================================================================
+   Apology Website - Global Design System & Styles
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Google Fonts & CSS Variables
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Indie+Flower&family=Patrick+Hand&family=Fredoka:wght@500;600&display=swap');
+
+:root {
+  /* Pastel Stripes */
+  --bg-stripe-yellow: #FEF9D9;
+  --bg-stripe-blue: #DCEDFA;
+  --stripe-width: 40px;
+
+  /* Card Colors */
+  --card-bg: #FFF6F7;
+  --card-border: #D47A8D;
+  --card-inner-glow: rgba(255, 235, 240, 0.7);
+  --card-shadow: 0 20px 50px rgba(196, 120, 137, 0.22), 0 6px 15px rgba(74, 59, 64, 0.05);
+
+  /* Button Colors */
+  --btn-bg: #F3D6DE;
+  --btn-bg-hover: #EFCAD4;
+  --btn-text: #37292F;
+  --btn-border: #E5C3CD;
+  --btn-shadow: 0 4px 12px rgba(212, 122, 141, 0.18);
+  --btn-shadow-hover: 0 8px 20px rgba(212, 122, 141, 0.28);
+
+  /* Text & Accents */
+  --text-dark: #37292F;
+  --text-soft: #5A474D;
+  --accent-pink: #FF8FA3;
+  --accent-yellow: #FFE066;
+  --sticky-bg: linear-gradient(135deg, #FFF9A6 0%, #FFF585 100%);
+  --sticky-tape: rgba(255, 255, 255, 0.75);
+
+  /* Typography */
+  --font-hand: 'Patrick Hand', 'Caveat', 'Comic Sans MS', cursive, sans-serif;
+  --font-heading: 'Patrick Hand', 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Global Reset & Base
+   -------------------------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   1. Global Background:
+      Alternating Pale Pastel Yellow & Light Pastel Blue vertical stripes
+      Overlaid with scattered small cartoon-style stars (Pink, Yellow, White)
+   -------------------------------------------------------------------------- */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 16px;
+  background-color: var(--bg-stripe-yellow);
+  background-image:
+    /* Scattered Cartoon-Style Stars Overlay in Pink (#FFB6C1), Yellow (#FFE066), White (#FFFFFF) */
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220'%3E%3Cg opacity='0.85'%3E%3C!-- Pink 4-point cartoon star --%3E%3Cpath d='M35,25 Q35,40 50,40 Q35,40 35,55 Q35,40 20,40 Q35,40 35,25 Z' fill='%23FFB6C1'/%3E%3Ccircle cx='35' cy='40' r='2' fill='%23FFFFFF'/%3E%3C!-- Yellow 5-point cartoon star --%3E%3Cpolygon points='165,30 168,40 178,40 170,47 173,57 165,51 157,57 160,47 152,40 162,40' fill='%23FFE066'/%3E%3C!-- White sparkle star --%3E%3Cpath d='M105,75 Q105,85 115,85 Q105,85 105,95 Q105,85 95,85 Q105,85 105,75 Z' fill='%23FFFFFF'/%3E%3C!-- Small pink star --%3E%3Cpolygon points='80,140 82,146 88,146 83,150 85,156 80,152 75,156 77,150 72,146 78,146' fill='%23FFB6C1'/%3E%3C!-- Yellow 4-point sparkle star --%3E%3Cpath d='M180,135 Q180,147 192,147 Q180,147 180,159 Q180,147 168,147 Q180,147 180,135 Z' fill='%23FFE066'/%3E%3Ccircle cx='180' cy='147' r='2' fill='%23FFFFFF'/%3E%3C!-- White small star --%3E%3Cpolygon points='40,180 42,185 47,185 43,188 45,193 40,190 35,193 37,188 33,185 38,185' fill='%23FFFFFF'/%3E%3C!-- Pink sparkle --%3E%3Cpath d='M130,185 Q130,193 138,193 Q130,193 130,201 Q130,193 122,193 Q130,193 130,185 Z' fill='%23FFB6C1'/%3E%3C/g%3E%3C/svg%3E"),
+    /* Repeating Vertical Stripes: Alternating Pale Pastel Yellow & Light Pastel Blue */
+    repeating-linear-gradient(
+      90deg,
+      var(--bg-stripe-yellow) 0px,
+      var(--bg-stripe-yellow) var(--stripe-width),
+      var(--bg-stripe-blue) var(--stripe-width),
+      var(--bg-stripe-blue) calc(var(--stripe-width) * 2)
+    );
+  background-repeat: repeat, repeat;
+  background-size: 220px 220px, auto;
+  font-family: var(--font-hand);
+  color: var(--text-dark);
+  position: relative;
+  user-select: none;
+}
+
+/* Optional Ambient floating stars in background */
+.ambient-star {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.6;
+  animation: floatAround 14s ease-in-out infinite alternate;
+}
+
+@keyframes floatAround {
+  0% { transform: translateY(0) rotate(0deg) scale(1); }
+  50% { transform: translateY(-25px) rotate(15deg) scale(1.1); }
+  100% { transform: translateY(20px) rotate(-15deg) scale(0.95); }
+}
+
+/* Sound & Control Bar */
+.top-controls {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.control-btn {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(6px);
+  border: 2px dashed var(--card-border);
+  color: var(--text-dark);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: var(--font-hand);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.control-btn:hover {
+  transform: scale(1.06);
+  background: #FFF;
+}
+
+/* --------------------------------------------------------------------------
+   Personalize Modal
+   -------------------------------------------------------------------------- */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(55, 41, 47, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.modal-overlay.open {
+  display: flex;
+  animation: modalFade 0.25s ease forwards;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-card {
+  position: relative;
+  background: #FFF8FA;
+  border: 4px dashed var(--card-border);
+  border-radius: 24px;
+  padding: 32px 28px 24px 28px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: var(--text-soft);
+  cursor: pointer;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.modal-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-soft);
+  margin-bottom: 20px;
+}
+
+.modal-form-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.modal-form-group label {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: var(--text-dark);
+}
+
+.modal-form-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid var(--btn-border);
+  font-family: var(--font-hand);
+  font-size: 1.15rem;
+  background: #FFF;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.modal-form-group input:focus {
+  border-color: var(--card-border);
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-save {
+  background-color: #FFAEC0;
+  color: #37292F;
+}
+
+.btn-copy {
+  background-color: var(--btn-bg);
+  font-size: 1.15rem;
+}
+
+.copy-alert {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #D44A6A;
+  min-height: 22px;
+}
+
+/* --------------------------------------------------------------------------
+   2. Main Container (The Card):
+      Light pink/cream background color, thick dashed border in darker pink/mauve.
+      Looks like a cute, physical greeting card.
+   -------------------------------------------------------------------------- */
+.card-stage {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  min-height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: max-width 0.35s ease;
+}
+
+.card-stage.wide-stage {
+  max-width: 780px;
+}
+
+.greeting-card {
+  position: relative;
+  width: 100%;
+  background-color: var(--card-bg);
+  /* Thick dashed border in a darker pink/mauve color */
+  border: 5px dashed var(--card-border);
+  border-radius: 28px;
+  padding: 38px 32px 32px 32px;
+  box-shadow: var(--card-shadow), inset 0 0 0 7px var(--card-inner-glow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  overflow: visible;
+}
+
+/* Cute physical greeting card washi tape at top center */
+.card-washi-tape {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 120px;
+  height: 28px;
+  background: rgba(255, 182, 193, 0.75);
+  border-left: 3px dashed rgba(255, 255, 255, 0.6);
+  border-right: 3px dashed rgba(255, 255, 255, 0.6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* Card Step Tracker in top-right corner */
+.card-tracker {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px dashed var(--card-border);
+  font-family: var(--font-hand);
+  letter-spacing: 0.5px;
+}
+
+/* Page Slide Container */
+.page-view {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: cardFadeIn 0.35s cubic-bezier(0.34, 1.3, 0.64, 1) forwards;
+}
+
+.page-view.active {
+  display: flex;
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Typography
+   -------------------------------------------------------------------------- */
+h1.card-heading,
+h2.card-heading {
+  font-family: var(--font-heading);
+  font-size: 2.3rem;
+  line-height: 1.25;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.5px;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+/* --------------------------------------------------------------------------
+   4. Images
+      Centered between heading text and buttons.
+      Subtle styling: rounded edges, soft drop shadow.
+   -------------------------------------------------------------------------- */
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px auto 20px auto;
+  width: 100%;
+  max-width: 250px;
+  min-height: 220px;
+}
+
+.card-image {
+  max-width: 240px;
+  max-height: 240px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  /* Rounded edges */
+  border-radius: 20px;
+  /* Soft drop shadow */
+  box-shadow: 0 10px 24px rgba(74, 59, 64, 0.12);
+  transition: transform 0.3s ease;
+  background: transparent;
+}
+
+.card-image:hover {
+  transform: scale(1.03) rotate(-1deg);
+}
+
+/* --------------------------------------------------------------------------
+   5. Buttons
+      Sit side-by-side at the bottom of the main container.
+      Solid, light grayish-pink background, dark text, rounded corners,
+      slight hover effect (scale-up).
+   -------------------------------------------------------------------------- */
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 14px;
+  position: relative;
+  min-height: 52px;
+}
+
+.btn {
+  /* Solid, light grayish-pink background */
+  background-color: var(--btn-bg);
+  /* Dark text */
+  color: var(--btn-text);
+  /* Rounded corners */
+  border-radius: 999px;
+  border: 2px solid var(--btn-border);
+  font-family: var(--font-hand);
+  font-size: 1.28rem;
+  font-weight: bold;
+  padding: 11px 26px;
+  cursor: pointer;
+  box-shadow: var(--btn-shadow);
+  /* Smooth transition for hover effect */
+  transition: all 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  outline: none;
+}
+
+/* Hover Effect: slight scale-up */
+.btn:hover {
+  transform: scale(1.06);
+  background-color: var(--btn-bg-hover);
+  box-shadow: var(--btn-shadow-hover);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-positive {
+  position: relative;
+}
+
+.btn-positive:hover::after {
+  content: ' 💕';
+}
+
+.btn-single {
+  min-width: 170px;
+}
+
+/* --------------------------------------------------------------------------
+   Page 1 Specifics: Two-Column Layout (Starburst Frame & Sticky Note)
+   -------------------------------------------------------------------------- */
+.page-one-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 28px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 22px;
+  text-align: left;
+}
+
+/* Left side: Placeholder image with a starburst frame */
+.starburst-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.starburst-badge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: starburstSpin 35s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes starburstSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.starburst-container .card-image {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 8px 20px rgba(212, 122, 141, 0.25);
+  z-index: 2;
+}
+
+/* Right side: Block of text styled like a sticky note */
+.sticky-note {
+  position: relative;
+  background: var(--sticky-bg);
+  padding: 24px 22px 22px 22px;
+  border-radius: 4px 4px 14px 4px;
+  /* Sticky note tilt */
+  transform: rotate(-2deg);
+  box-shadow: 4px 12px 24px rgba(74, 59, 64, 0.12), 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(230, 200, 80, 0.35);
+  font-family: 'Patrick Hand', 'Caveat', cursive;
+  color: #37292F;
+  transition: transform 0.25s ease;
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) scale(1.02);
+}
+
+/* Realistic washi tape on sticky note */
+.sticky-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(1deg);
+  width: 80px;
+  height: 22px;
+  background: var(--sticky-tape);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  border-left: 2px dashed rgba(200, 200, 200, 0.6);
+  border-right: 2px dashed rgba(200, 200, 200, 0.6);
+}
+
+.sticky-text {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  color: #2F2227;
+  letter-spacing: 0.3px;
+  word-spacing: 1px;
+}
+
+.sticky-signature {
+  margin-top: 10px;
+  text-align: right;
+  font-family: 'Caveat', cursive;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #D44A6A;
+}
+
+/* --------------------------------------------------------------------------
+   Page 13 Special Interaction: The Trick Runaway "No" Button
+   -------------------------------------------------------------------------- */
+#btn-page13-no {
+  position: relative;
+  transition: transform 0.15s ease-out, left 0.18s ease-out, top 0.18s ease-out;
+  cursor: pointer;
+}
+
+#btn-page13-no.teleporting {
+  position: absolute;
+  z-index: 50;
+  transition: all 0.16s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 8px 25px rgba(230, 57, 70, 0.35);
+}
+
+.trick-hint {
+  font-size: 1.05rem;
+  color: #C9184A;
+  margin-top: 10px;
+  min-height: 24px;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   Page 14 Final Success Page & Confetti
+   -------------------------------------------------------------------------- */
+.success-banner {
+  font-family: 'Fredoka', var(--font-hand);
+  font-size: 1.25rem;
+  color: #D44A6A;
+  margin-bottom: 8px;
+}
+
+.replay-container {
+  margin-top: 24px;
+}
+
+.btn-replay {
+  background: transparent;
+  border: 2px dashed var(--card-border);
+  color: var(--text-soft);
+  font-family: var(--font-hand);
+  font-size: 1.1rem;
+  padding: 8px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-replay:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
+  color: var(--text-dark);
+}
+
+/* Canvas Confetti */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Layout (Mobile & Tablet)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  body {
+    padding: 16px 12px;
+  }
+
+  .card-stage {
+    min-height: 480px;
+  }
+
+  .greeting-card {
+    padding: 32px 20px 24px 20px;
+    border-width: 4px;
+  }
+
+  h1.card-heading,
+  h2.card-heading {
+    font-size: 1.85rem;
+    margin-bottom: 14px;
+  }
+
+  .page-one-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .starburst-container {
+    width: 190px;
+    height: 190px;
+  }
+
+  .starburst-container .card-image {
+    width: 135px;
+    height: 135px;
+  }
+
+  .sticky-note {
+    padding: 18px 16px;
+    transform: rotate(-1deg);
+  }
+
+  .sticky-text {
+    font-size: 1.05rem;
+  }
+
+  .image-wrapper {
+    max-width: 210px;
+    min-height: 190px;
+    margin-bottom: 14px;
+  }
+
+  .card-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .button-group {
+    gap: 12px;
+  }
+
+  .btn {
+    font-size: 1.15rem;
+    padding: 10px 20px;
+  }
+
+  .top-controls {
+    top: 10px;
+    right: 10px;
+  }
+}

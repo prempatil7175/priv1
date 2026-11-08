@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p11-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F7F9FD"/>
+      <stop offset="100%" stop-color="#D7E1F2"/>
+    </radialGradient>
+    <filter id="p11-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#738BB5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p11-bg)" stroke="#B3C5E4" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Falling snowflakes/specks -->
+  <circle cx="65" cy="85" r="4" fill="#FFF"/>
+  <circle cx="260" cy="90" r="5" fill="#FFF"/>
+  <circle cx="240" cy="135" r="3.5" fill="#FFF"/>
+  
+  <g filter="url(#p11-shadow)">
+    <!-- Cat Body -->
+    <ellipse cx="160" cy="228" rx="60" ry="52" fill="#FFFDF8" stroke="#3E343A" stroke-width="3.5"/>
+    <ellipse cx="160" cy="235" rx="38" ry="34" fill="#FFF0F5"/>
+    <!-- Feet -->
+    <ellipse cx="115" cy="272" rx="16" ry="10" fill="#FFFDF8" stroke="#3E343A" stroke-width="3"/>
+    <ellipse cx="205" cy="272" rx="16" ry="10" fill="#FFFDF8" stroke="#3E343A" stroke-width="3"/>
+    
+    <!-- Cat Head -->
+    <ellipse cx="160" cy="150" rx="55" ry="45" fill="#FFFDF8" stroke="#3E343A" stroke-width="3.5"/>
+    
+    <!-- Big Cozy Slouchy Knitted Beanie Hat -->
+    <!-- Pom-pom on top/drooping -->
+    <circle cx="225" cy="70" r="16" fill="#FFB4C2" stroke="#3E343A" stroke-width="2.5"/>
+    <circle cx="225" cy="70" r="12" fill="#FF8FA3"/>
+    <!-- Hat body -->
+    <path d="M110,135 C100,75 185,55 220,78 C210,110 205,130 205,135 Z" fill="#9381FF" stroke="#3E343A" stroke-width="3.5"/>
+    <!-- Hat folded brim -->
+    <rect x="100" y="118" width="118" height="24" rx="10" fill="#B8B8FF" stroke="#3E343A" stroke-width="3"/>
+    <!-- Knitted stripe patterns on brim -->
+    <line x1="120" y1="120" x2="120" y2="140" stroke="#7A68E0" stroke-width="2"/>
+    <line x1="140" y1="120" x2="140" y2="140" stroke="#7A68E0" stroke-width="2"/>
+    <line x1="160" y1="120" x2="160" y2="140" stroke="#7A68E0" stroke-width="2"/>
+    <line x1="180" y1="120" x2="180" y2="140" stroke="#7A68E0" stroke-width="2"/>
+    <line x1="200" y1="120" x2="200" y2="140" stroke="#7A68E0" stroke-width="2"/>
+    
+    <!-- Kitten Face under the hat -->
+    <!-- Sad / Guilt-ridden puppy cat eyes -->
+    <ellipse cx="138" cy="158" rx="8" ry="11" fill="#2E2420"/>
+    <circle cx="135" cy="154" r="3" fill="#FFF"/>
+    <circle cx="140" cy="162" r="1.5" fill="#FFF"/>
+    
+    <ellipse cx="182" cy="158" rx="8" ry="11" fill="#2E2420"/>
+    <circle cx="179" cy="154" r="3" fill="#FFF"/>
+    <circle cx="184" cy="162" r="1.5" fill="#FFF"/>
+    
+    <!-- Blush -->
+    <ellipse cx="122" cy="168" rx="9" ry="5" fill="#FF8CA3" opacity="0.6"/>
+    <ellipse cx="198" cy="168" rx="9" ry="5" fill="#FF8CA3" opacity="0.6"/>
+    
+    <!-- Nose & sad droopy mouth -->
+    <polygon points="157,165 163,165 160,169" fill="#FF8FA3"/>
+    <path d="M154,175 Q160,171 160,171 Q160,171 166,175" stroke="#3E343A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Whiskers -->
+    <line x1="102" y1="162" x2="118" y2="164" stroke="#3E343A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="100" y1="171" x2="117" y2="170" stroke="#3E343A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="218" y1="162" x2="202" y2="164" stroke="#3E343A" stroke-width="2" stroke-linecap="round"/>
+    <line x1="220" y1="171" x2="203" y2="170" stroke="#3E343A" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Paws tucked close -->
+    <ellipse cx="145" cy="220" rx="12" ry="9" fill="#FFFDF8" stroke="#3E343A" stroke-width="2.5"/>
+    <ellipse cx="175" cy="220" rx="12" ry="9" fill="#FFFDF8" stroke="#3E343A" stroke-width="2.5"/>
+  </g>
+</svg>
+

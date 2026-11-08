@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p14-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="100%" stop-color="#FFE8F0"/>
+    </radialGradient>
+    <filter id="p14-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#D47A8D" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="170" cy="160" r="148" fill="url(#p14-bg)" stroke="#FFAEC0" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Floating Confetti & Starbursts -->
+  <polygon points="55,60 58,50 61,60 71,63 61,66 58,76 55,66 45,63" fill="#FFE066"/>
+  <polygon points="280,65 283,55 286,65 296,68 286,71 283,81 280,71 270,68" fill="#FF8CA3"/>
+  <circle cx="65" cy="120" r="5" fill="#70C1FF"/>
+  <circle cx="285" cy="130" r="6" fill="#A7F3D0"/>
+  <circle cx="270" cy="230" r="5" fill="#FFE066"/>
+  <circle cx="70" cy="225" r="5" fill="#F472B6"/>
+  
+  <g filter="url(#p14-shadow)">
+    <!-- Cute Doodle Character (Happy Kawaii Bear / Bunny jumping for joy) -->
+    <!-- Ears with happy bounce -->
+    <ellipse cx="120" cy="95" rx="16" ry="24" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3.5" transform="rotate(-15 120 95)"/>
+    <ellipse cx="120" cy="95" rx="9" ry="15" fill="#FFAEC0" transform="rotate(-15 120 95)"/>
+    <ellipse cx="220" cy="95" rx="16" ry="24" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3.5" transform="rotate(15 220 95)"/>
+    <ellipse cx="220" cy="95" rx="9" ry="15" fill="#FFAEC0" transform="rotate(15 220 95)"/>
+    
+    <!-- Body -->
+    <ellipse cx="170" cy="210" rx="60" ry="55" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3.5"/>
+    <ellipse cx="170" cy="215" rx="40" ry="36" fill="#FFF0F5"/>
+    
+    <!-- Jumping Feet kicking out in excitement -->
+    <ellipse cx="120" cy="265" rx="18" ry="12" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3" transform="rotate(-25 120 265)"/>
+    <ellipse cx="220" cy="265" rx="18" ry="12" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3" transform="rotate(25 220 265)"/>
+    
+    <!-- Head -->
+    <ellipse cx="170" cy="135" rx="58" ry="48" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3.5"/>
+    
+    <!-- Big Happy Joyful Curved Eyes -->
+    <path d="M138,130 Q148,118 158,130" fill="none" stroke="#3D2B24" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M182,130 Q192,118 202,130" fill="none" stroke="#3D2B24" stroke-width="3.5" stroke-linecap="round"/>
+    
+    <!-- Bright Pink Blush -->
+    <ellipse cx="132" cy="140" rx="12" ry="7" fill="#FF5C8A" opacity="0.6"/>
+    <ellipse cx="208" cy="140" rx="12" ry="7" fill="#FF5C8A" opacity="0.6"/>
+    
+    <!-- Cute open smile -->
+    <polygon points="167,133 173,133 170,137" fill="#FF758F"/>
+    <path d="M160,140 Q170,154 180,140" stroke="#3D2B24" stroke-width="3" fill="#FF4D6D" stroke-linecap="round"/>
+    <path d="M164,144 Q170,140 176,144" fill="#FFF"/>
+    
+    <!-- Hands holding the sign up high -->
+    <!-- Arms reaching up -->
+    <ellipse cx="80" cy="175" rx="12" ry="16" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3" transform="rotate(-30 80 175)"/>
+    <ellipse cx="260" cy="175" rx="12" ry="16" fill="#FFFDF8" stroke="#3D2B24" stroke-width="3" transform="rotate(30 260 175)"/>
+    
+    <!-- THE SIGN: "YOU ARE AMAZING" -->
+    <!-- Sign Board -->
+    <g transform="translate(45, 172)">
+      <!-- Board shadow & background -->
+      <rect x="0" y="0" width="250" height="58" rx="14" fill="#FFF9A6" stroke="#3D2B24" stroke-width="3.5"/>
+      <!-- Inner dashed decorative border -->
+      <rect x="5" y="5" width="240" height="48" rx="10" fill="none" stroke="#F5C03E" stroke-width="2" stroke-dasharray="5,4"/>
+      
+      <!-- Stars on sign -->
+      <polygon points="20,29 23,22 25,29 32,31 26,34 28,41 23,36 17,40 19,33 13,30" fill="#FF758F"/>
+      <polygon points="230,29 233,22 235,29 242,31 236,34 238,41 233,36 227,40 229,33 223,30" fill="#FF758F"/>
+      
+      <!-- Cute hand-lettered text -->
+      <text x="125" y="27" font-family="'Patrick Hand', 'Caveat', 'Comic Sans MS', cursive" font-size="20" font-weight="bold" fill="#3D2B24" text-anchor="middle" letter-spacing="1">YOU ARE</text>
+      <text x="125" y="48" font-family="'Patrick Hand', 'Caveat', 'Comic Sans MS', cursive" font-size="22" font-weight="900" fill="#FF3366" text-anchor="middle" letter-spacing="2">AMAZING! ✨</text>
+    </g>
+    
+    <!-- Tiny paws gripping edges of the sign -->
+    <ellipse cx="50" cy="200" rx="11" ry="8" fill="#FFFDF8" stroke="#3D2B24" stroke-width="2.5"/>
+    <ellipse cx="290" cy="200" rx="11" ry="8" fill="#FFFDF8" stroke="#3D2B24" stroke-width="2.5"/>
+  </g>
+</svg>
+

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p3-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="100%" stop-color="#FFE8B5"/>
+    </radialGradient>
+    <filter id="p3-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#C2873E" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p3-bg)" stroke="#F3BA6B" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Sweatdrop and action marks -->
+  <path d="M225,95 C222,88 226,82 230,86 C234,90 231,98 225,95 Z" fill="#6EC1E4"/>
+  <path d="M90,95 Q85,88 80,95" stroke="#D48B38" stroke-width="3" stroke-linecap="round" fill="none"/>
+  
+  <g filter="url(#p3-shadow)">
+    <!-- Ears -->
+    <ellipse cx="100" cy="100" rx="20" ry="24" fill="#E89E53" stroke="#5C3B1E" stroke-width="3.5"/>
+    <ellipse cx="102" cy="100" rx="12" ry="15" fill="#FFAEC0"/>
+    <ellipse cx="220" cy="100" rx="20" ry="24" fill="#E89E53" stroke="#5C3B1E" stroke-width="3.5"/>
+    <ellipse cx="218" cy="100" rx="12" ry="15" fill="#FFAEC0"/>
+    
+    <!-- Big Chubby Hamster Body (Round Potato) -->
+    <ellipse cx="160" cy="195" rx="85" ry="90" fill="#F4B26F" stroke="#5C3B1E" stroke-width="3.5"/>
+    <!-- Huge White Belly / Cheeks -->
+    <ellipse cx="160" cy="210" rx="65" ry="70" fill="#FFFDF8"/>
+    
+    <!-- Tiny Feet -->
+    <ellipse cx="115" cy="285" rx="16" ry="10" fill="#FFC2D1" stroke="#5C3B1E" stroke-width="3"/>
+    <ellipse cx="205" cy="285" rx="16" ry="10" fill="#FFC2D1" stroke="#5C3B1E" stroke-width="3"/>
+    
+    <!-- Giant Puffed Cheeks -->
+    <circle cx="115" cy="195" r="32" fill="#F4B26F"/>
+    <circle cx="205" cy="195" r="32" fill="#F4B26F"/>
+    <circle cx="115" cy="195" r="32" fill="none" stroke="#5C3B1E" stroke-width="3.5"/>
+    <circle cx="205" cy="195" r="32" fill="none" stroke="#5C3B1E" stroke-width="3.5"/>
+    <!-- Blush on Cheeks -->
+    <ellipse cx="110" cy="205" rx="15" ry="9" fill="#FF758F" opacity="0.6"/>
+    <ellipse cx="210" cy="205" rx="15" ry="9" fill="#FF758F" opacity="0.6"/>
+    
+    <!-- Giant Anime Goofy Eyes -->
+    <circle cx="132" cy="155" r="18" fill="#2E1C14"/>
+    <circle cx="127" cy="149" r="7" fill="#FFFFFF"/>
+    <circle cx="138" cy="162" r="3.5" fill="#FFFFFF"/>
+    <circle cx="188" cy="155" r="18" fill="#2E1C14"/>
+    <circle cx="183" cy="149" r="7" fill="#FFFFFF"/>
+    <circle cx="194" cy="162" r="3.5" fill="#FFFFFF"/>
+    
+    <!-- Tiny Nose and Buck Teeth -->
+    <ellipse cx="160" cy="172" rx="5" ry="4" fill="#FF8FA3"/>
+    <rect x="156" y="177" width="8" height="10" rx="2" fill="#FFFFFF" stroke="#5C3B1E" stroke-width="2"/>
+    <line x1="160" y1="177" x2="160" y2="187" stroke="#5C3B1E" stroke-width="1.5"/>
+    <path d="M152,176 Q160,180 160,177 Q160,180 168,176" fill="none" stroke="#5C3B1E" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Tiny Paws held to chest -->
+    <ellipse cx="145" cy="225" rx="12" ry="9" fill="#FFC2D1" stroke="#5C3B1E" stroke-width="2.5"/>
+    <ellipse cx="175" cy="225" rx="12" ry="9" fill="#FFC2D1" stroke="#5C3B1E" stroke-width="2.5"/>
+  </g>
+</svg>
+

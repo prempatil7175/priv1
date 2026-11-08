@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <radialGradient id="p8-bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F5F5FA"/>
+      <stop offset="100%" stop-color="#DCDDE8"/>
+    </radialGradient>
+    <filter id="p8-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#80829D" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <circle cx="160" cy="160" r="145" fill="url(#p8-bg)" stroke="#B6B8CE" stroke-width="3" stroke-dasharray="6,6"/>
+  <!-- Little autumn leaf blowing away / dust -->
+  <path d="M60,250 Q75,245 80,255" stroke="#9E9FAF" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M45,260 Q60,256 68,262" stroke="#9E9FAF" stroke-width="2" stroke-linecap="round" fill="none"/>
+  
+  <g filter="url(#p8-shadow)">
+    <!-- Stick with bindle over shoulder -->
+    <!-- Wooden stick -->
+    <line x1="85" y1="215" x2="250" y2="105" stroke="#795548" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Polka Dot Bindle / Bag tied to stick -->
+    <g transform="translate(60, 200)">
+      <circle cx="25" cy="25" r="22" fill="#FF8FA3" stroke="#4A3B32" stroke-width="3"/>
+      <!-- Knot tied on stick -->
+      <polygon points="25,5 15,-5 25,-2 35,-5" fill="#FF8FA3" stroke="#4A3B32" stroke-width="2.5"/>
+      <!-- Polka dots -->
+      <circle cx="15" cy="18" r="3" fill="#FFF"/>
+      <circle cx="32" cy="15" r="3" fill="#FFF"/>
+      <circle cx="22" cy="32" r="3" fill="#FFF"/>
+      <circle cx="35" cy="30" r="2.5" fill="#FFF"/>
+    </g>
+    
+    <!-- Cat Walking Away (Body seen from 3/4 back) -->
+    <!-- Tail drooping sadly -->
+    <path d="M115,245 C95,260 85,280 92,290 C96,295 105,290 102,282 C98,272 108,258 122,250 Z" fill="#EADBC8" stroke="#4A3B32" stroke-width="3"/>
+    
+    <!-- Body -->
+    <ellipse cx="165" cy="225" rx="48" ry="46" fill="#F4EAE0" stroke="#4A3B32" stroke-width="3.5"/>
+    
+    <!-- Walking Little Paws -->
+    <ellipse cx="140" cy="275" rx="14" ry="9" fill="#F4EAE0" stroke="#4A3B32" stroke-width="3"/>
+    <ellipse cx="190" cy="270" rx="14" ry="9" fill="#F4EAE0" stroke="#4A3B32" stroke-width="3"/>
+    
+    <!-- Cat Head turned back looking over shoulder with sad eyes -->
+    <ellipse cx="185" cy="145" rx="46" ry="40" fill="#F4EAE0" stroke="#4A3B32" stroke-width="3.5"/>
+    
+    <!-- Drooping Ears -->
+    <polygon points="152,118 150,75 178,110" fill="#F4EAE0" stroke="#4A3B32" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="155,112 153,85 172,110" fill="#FFAEC0"/>
+    <polygon points="225,125 235,80 205,115" fill="#F4EAE0" stroke="#4A3B32" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="220,122 226,90 208,115" fill="#FFAEC0"/>
+    
+    <!-- Sad Glossy Cat Eyes looking back -->
+    <ellipse cx="175" cy="142" rx="7" ry="10" fill="#2E2420"/>
+    <circle cx="173" cy="138" r="2.5" fill="#FFF"/>
+    <ellipse cx="205" cy="142" rx="7" ry="10" fill="#2E2420"/>
+    <circle cx="203" cy="138" r="2.5" fill="#FFF"/>
+    
+    <!-- Teardrop -->
+    <path d="M165,150 C162,156 160,160 163,163 C166,166 170,164 169,159 Z" fill="#70C1FF"/>
+    
+    <!-- Quivering mouth -->
+    <path d="M185,155 Q190,152 195,155" stroke="#4A3B32" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    
+    <!-- Blush -->
+    <ellipse cx="165" cy="150" rx="7" ry="4" fill="#FFAEC0" opacity="0.6"/>
+    <ellipse cx="218" cy="150" rx="7" ry="4" fill="#FFAEC0" opacity="0.6"/>
+  </g>
+</svg>
+
